@@ -6,7 +6,7 @@ print('          Profesor: Antonio Centeno')
 print('*********************************************************************************\n')
 print('*********************************************************************************')
 print('*********************************************************************************\n')
-"""
+
 
 # Ejercicio 1
 def funcion():
@@ -163,21 +163,20 @@ mitupla1 = (1, 2, 3)
 
 
 def multiplicar():  # Se puede poner argumento en def "x"
-    for x in mitupla1:
+    for _ in mitupla1:
         print(mitupla1)
 
 
 multiplicar()
-"""
+
 # Ejercicio 11
-mitupla = (1, 2, 3, 4, 5, 6, 2.456)
+mitupla = (1.25, 2.345, 3.456, 4.567, 5.678, 6.789, 7.456)
 
 
 def multiplicar():
     for i in mitupla:
-        m = round((i*2.21),2)
-        print(round(m)
-
+        m = round((i * 3.14), 4)
+        print(m)
 
 
 multiplicar()
