@@ -6,7 +6,7 @@ print('          Profesor: Antonio Centeno')
 print('*********************************************************************************\n')
 print('*********************************************************************************')
 print('*********************************************************************************\n')
-
+"""
 
 # Ejercicio 1
 def funcion():
@@ -169,7 +169,7 @@ def multiplicar():  # Se puede poner argumento en def "x"
 
 multiplicar()
 
-# Ejercicio 11
+# Ejercicio 11 Multiplicamos por 3.14
 mitupla = (1.25, 2.345, 3.456, 4.567, 5.678, 6.789, 7.456)
 
 
@@ -180,3 +180,50 @@ def multiplicar():
 
 
 multiplicar()
+
+
+
+# Ejercicio 12 Multiplicamos x 2
+
+
+def operar(*h):
+    for x in h:
+        print("El resultado al x por 2, es:", int(x) * 2, end="\n")
+
+
+operar(1, "2", 3)
+
+
+# Ejercicio 13 Paso de argumento
+
+def operar(*h, argumento="El resultado al x por 2, es:"):
+    for x in h:
+        print(argumento, int(x) * 2, end="\n")
+
+
+operar(1, "2", 3)
+"""
+
+
+# Ejercicio 14
+
+def palabras(a, b, c, *, s="fisica", p="Quimica"):
+    listadepalabras = [a, b, c]
+    for i in listadepalabras:
+        print(i + s, end="\n")
+    print(p + s)  # Este print crea la ultima suma
+
+
+palabras("Astro", "Bio", "Nano")
+
+# Ejercicio 15
+
+midiccionario = {"Portugal": "Lisboa", "España": "Madrid", "Francia": "Paris", "Italia": "Roma"}
+
+
+def capitales(**dicci15):
+    for item in dicci15:
+        print("País: ", item, ",", "Capital: ", dicci15[item])
+
+
+capitales(**midiccionario)
