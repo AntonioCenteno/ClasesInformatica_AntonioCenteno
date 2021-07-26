@@ -211,10 +211,12 @@ def palabras(a, b, c, *, s="fisica", p="Quimica"):
     listadepalabras = [a, b, c]
     for i in listadepalabras:
         print(i + s, end="\n")
-    print(p + s)  # Este print crea la ultima suma
+        print(i+ p )  # Este print crea la ultima suma
+    print(p+s) # creacion de la ultima linea sacando quimica-fisica
 
 
 palabras("Astro", "Bio", "Nano")
+print("****************")
 
 # Ejercicio 15
 

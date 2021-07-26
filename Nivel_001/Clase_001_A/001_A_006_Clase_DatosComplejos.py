@@ -9,8 +9,7 @@ print("""La Tupla es una variable que permite almacenar varios datos inmutables 
 y que no se permite modificarlos una vez que son creados.
 Ejemplo: mi_tupla = ('pongo texto', 20, 2.89, 'otro dato', 30)
 Se accede al contenido de la tupla asi: mi_tupla = [0], mi_tupla = [1], etc
-****************************************************************************************
-""")
+****************************************************************************************""")
 import math
 mi_tupla = ('Primer texto', 11, 2.22, 'Tercer dato', 444)
 
