@@ -6,7 +6,7 @@ print('          Profesor: Antonio Centeno')
 print('*********************************************************************************\n')
 print('*********************************************************************************')
 print('*********************************************************************************\n')
-"""
+
 
 # Ejercicio 1
 def funcion():
@@ -202,7 +202,6 @@ def operar(*h, argumento="El resultado al x por 2, es:"):
 
 
 operar(1, "2", 3)
-"""
 
 
 # Ejercicio 14
@@ -229,3 +228,27 @@ def capitales(**dicci15):
 
 
 capitales(**midiccionario)
+
+# Ejercicio 16
+
+col = {"color_1":"rojo","color_2":"azul","color_3":"verde"}
+gama =["cinabrio","cobalto","esmeralda"]
+
+def colorines (*gama,**col):
+    idx=0
+    for item in col:
+        print(item,"",col[item],gama[idx])
+        idx += 1
+colorines(*gama,**col)
+
+# Ejercicio 17
+def infobasica (nombre,*estudios,**mejor_nota):
+    idx=0
+    print(nombre)
+    for item in estudios:
+        print(item,sep="y")
+    for item in mejor_nota:
+        print(estudios[0][idx],"",item,mejor_nota[item])
+        idx = idx + 1
+
+infobasica("Ana",["Matmematicas: ","Fisica: "],Calculo_Infinitesimal = '10',Fisica_Cuantica ='9')
